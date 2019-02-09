@@ -205,7 +205,7 @@ export class MSICreator {
       '{{UpgradeCode}}': this.upgradeCode,
       '{{Version}}': this.version,
       '{{Platform}}': this.arch,
-      '{{ProgramFilesFolder}}': this.arch === 'x86' ? 'ProgramFilesFolder' : 'ProgramFiles64Folder',
+      '{{ProgramFilesFolder}}': 'WindowsVolume',
       '{{ProcessorArchitecture}}' : this.arch,
       '{{Win64YesNo}}' : this.arch === 'x86' ? 'no' : 'yes',
     };
